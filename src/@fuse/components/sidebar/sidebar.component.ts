@@ -661,32 +661,32 @@ export class FuseSidebarComponent implements OnInit, OnDestroy
     /**
      * Mouseenter
      */
-    @HostListener('mouseenter')
-    onMouseEnter(): void
-    {
-        // Only work if the auto trigger is enabled
-        if ( !this.foldedAutoTriggerOnHover )
-        {
-            return;
-        }
+    // @HostListener('mouseenter')
+    // onMouseEnter(): void
+    // {
+    //     // Only work if the auto trigger is enabled
+    //     if ( !this.foldedAutoTriggerOnHover )
+    //     {
+    //         return;
+    //     }
 
-        this.unfoldTemporarily();
-    }
+    //     this.unfoldTemporarily();
+    // }
 
-    /**
-     * Mouseleave
-     */
-    @HostListener('mouseleave')
-    onMouseLeave(): void
-    {
-        // Only work if the auto trigger is enabled
-        if ( !this.foldedAutoTriggerOnHover )
-        {
-            return;
-        }
+    // /**
+    //  * Mouseleave
+    //  */
+    // @HostListener('mouseleave')
+    // onMouseLeave(): void
+    // {
+    //     // Only work if the auto trigger is enabled
+    //     if ( !this.foldedAutoTriggerOnHover )
+    //     {
+    //         return;
+    //     }
 
-        this.foldTemporarily();
-    }
+    //     this.foldTemporarily();
+    // }
 
     /**
      * Fold the sidebar permanently
